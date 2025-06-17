@@ -58,8 +58,8 @@ During development, I focused on:
 ## 💻 Tech Stack
 
 - **NativeScript CLI**
-- **JavaScript**
-- **XML** (for layout)
+- **Typescript**
+- **HTML** (for layout)
 - **CSS** (for styling)
 - **Android Emulator** or Physical Device for testing
 

@@ -1,0 +1,61 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.MusicPlayer",
+    "tns-android": {
+      "version": "5.3.1"
+    },
+    "tns-ios": {
+      "version": "5.3.1"
+    }
+  },
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@angular/animations": "~7.2.0",
+    "@angular/common": "~7.2.0",
+    "@angular/compiler": "~7.2.0",
+    "@angular/core": "~7.2.0",
+    "@angular/forms": "~7.2.0",
+    "@angular/http": "~7.2.0",
+    "@angular/platform-browser": "~7.2.0",
+    "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/router": "~7.2.0",
+    "assert": "^1.4.1",
+    "inherits": "^2.0.3",
+    "music-metadata": "^3.5.2",
+    "nativescript-angular": "^7.2.3",
+    "nativescript-audio-player": "^1.0.3",
+    "nativescript-nodeify": "^0.8.0",
+    "nativescript-permissions": "^1.2.3",
+    "nativescript-sqlite": "^2.3.3",
+    "nativescript-theme-core": "~1.0.4",
+    "nativescript-ui-calendar": "^4.0.0",
+    "nativescript-ui-chart": "^4.0.0",
+    "nativescript-ui-dataform": "^4.0.0",
+    "nativescript-ui-gauge": "^4.0.0",
+    "nativescript-ui-listview": "^6.1.0",
+    "nativescript-ui-sidedrawer": "^6.0.0",
+    "process": "^0.11.10",
+    "readable-stream": "^2.3.3",
+    "reflect-metadata": "~0.1.12",
+    "rxjs": "^6.3.3",
+    "tns-core-modules": "^5.3.1",
+    "typescript": "~3.1.1",
+    "util": "^0.10.4",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "~7.2.0",
+    "@nativescript/schematics": "~0.5.0",
+    "@types/node": "^11.13.0",
+    "codelyzer": "~4.5.0",
+    "nativescript-dev-typescript": "^0.9.0",
+    "tslint": "~5.11.0"
+  },
+  "gitHead": "c175016cf900d406d2428bb6c4fcbb62093fb351",
+  "readme": "NativeScript Application"
+}

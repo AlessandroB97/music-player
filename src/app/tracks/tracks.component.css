@@ -1,0 +1,65 @@
+.song-title{
+    font-size: 18;
+    letter-spacing: 0.2px;
+    color: #fff;
+    font-weight: 100;
+}
+.time-line{
+    width: 100%;
+    padding: 0 30;
+    height: 2;
+    border-top-color: rgba(180, 180, 180, 0.5);
+    border-top-width: 2;
+}
+.time-passed{
+    width: 60; /* lunghezza riga del tempo trascorso*/
+    padding: 0 30;
+    height: 2;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 2;
+}
+.time-indicator{
+    width: 18;
+    height: 18;
+    border-radius: 10;
+    background-color: #fff;
+    margin-left: 60; /*posizione indicatore*/
+}
+.window{
+    /* border-top-right-radius: 15;
+    border-top-left-radius: 15; */
+    /*background-image: url("~/img/camila-songs/1.png");*/
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.content{
+    background-color: rgba(0,0,0,0.5);
+    opacity: 1;
+}
+
+.back
+.border-b{
+    border-bottom-width: 1px;
+    border-bottom-color: #fff;
+    margin: 0 15;
+    opacity: 0.3;
+}
+.bt{
+    background: #fff; /* fallback color for old browsers */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #fff;
+    border-radius: 100%;
+    height: auto;
+}
+.bt:active{
+    background: rgba(255, 255, 255, 0.15);
+}
+.progress{
+    color: #fff;
+}
+Image{
+    filter: blur(5px);
+}

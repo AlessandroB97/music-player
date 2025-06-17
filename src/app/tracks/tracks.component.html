@@ -1,0 +1,21 @@
+<GridLayout  class="window" #bg>
+
+    <ScrollView scrollBarIndicatorVisible="false">
+        <StackLayout class="content">
+            <Label row="0" col="1" text="h" class="icoPB" fontSize="28" horizontalAlignment="center" margin="25" (tap)="goBack()"></Label>
+
+            <!-- Inserire una ListView con le canzoni successive -->
+            <StackLayout *ngFor="let song of this.songService.songs">
+                <GridLayout rows="auto" columns="auto, *" margin="15 15 0 15" paddingBottom="15">
+                    <Image row="0" col="0" [src]="song.Image? song.Image : 'res://cuffie'" width="45"></Image>
+                    <GridLayout row="0" col="1" rows="auto, auto" columns="*, auto" margin="15 15 0 15" paddingBottom="15">
+                        <Label row="0" col="0" class="sfl fs18 w" [text]="song.Title" paddingBottom="8"></Label>
+                        <Label row="1" col="0" class="sfl fs14 fw100 w" [text]="song.Artist"></Label>
+                        <Label row="0" col="1" text="g" rowSpan="2" class="icoPB"></Label>
+                    </GridLayout>
+                </GridLayout>
+                <Label text="" class="border-b" height="1"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

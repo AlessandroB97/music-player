@@ -1,0 +1,44 @@
+# Node dependencies
+node_modules/
+
+# NativeScript platforms (Android/iOS build output)
+platforms/
+hooks/
+
+# Build artifacts
+dist/
+build/
+*.log
+*.tmp
+
+# VSCode settings
+.vscode/
+.history/
+
+# macOS system files
+.DS_Store
+
+# Android Studio / Xcode files
+.idea/
+*.iml
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcworkspace
+*.xcodeproj/
+*.xcconfig
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Environment files
+.env
+.env.*.local
+
+# NativeScript backup files
+*.bak
+
+# Optional: CLI logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,64 @@
+<GridLayout  class="window" #bg>
+    <Image [src]="this.tags.image"  stretch="aspectFill"></Image>
+
+    <ScrollView scrollBarIndicatorVisible="false">
+        <StackLayout class="content">
+            <Label row="0" col="1" text="h" class="icoPB" fontSize="28" horizontalAlignment="center" margin="25" (tap)="goBack()"></Label>
+            <Image id="songImg" row="0" col="0" [src]="this.tags.image ? this.tags.image : 'res://cuffie'" width="300" height="300" borderRadius="10"></Image>
+            <Label [text]="this.tags.artist +' - '+ this.tags.title" class="song-title mt" fontWeight="400" padding="40 0 30 0" horizontalAlignment="center"></Label>
+            <GridLayout columns="*, *" rows="auto, auto" margin="0 40">
+                <GridLayout col="0" row="0" columns="*" rows="auto" colSpan="2">
+                    <Slider #slider class="progress" [value]="currentTime" (valueChange)="isSliderValueChanged(slider.value) && onCurrentTimeChanged($event)" [maxValue]="duration" minValue="0"></Slider>
+                    <!--<Progress class="progress" [value]="progress" (tap)="playAtSelected" ></Progress>-->
+                </GridLayout>
+                <Label row="1" col="0" text={{millisToMinutesAndSeconds(currentTime)}} class="sfl fw100 w" fontSize="13" horizontalAlignment="left"></Label>
+                <Label row="1" col="1" text={{millisToMinutesAndSeconds(duration)}} class="sfl fw100 w" fontSize="13" horizontalAlignment="right"></Label>
+            </GridLayout>
+            <GridLayout columns="*, *, *, *, *" rows="100" padding="20 15 10 19">
+                <Button verticalAlignment="center" row="0" col="0" text="f" class="icoPB" fontSize="" textAlignment="center"></Button>
+                <Button verticalAlignment="center" row="0" col="1" text="b" class="icoPB bt" padding="15 0" fontSize="20" marginRight="20" textAlignment="center"></Button>
+                <Button (tap)="playPause()" verticalAlignment="center" [text]="this.player.isAudioPlaying() ? 'd' : 'c'" row="0" col="2" class="icoPB bt" padding="20 0" fontSize="32" textAlignment="center"></Button>
+                <Button verticalAlignment="center" row="0" col="3" text="a" class="icoPB bt" padding="15 0" fontSize="20" marginLeft="20" textAlignment="center"></Button>
+                <Button verticalAlignment="center" row="0" col="4" text="e" class="icoPB" fontSize="" textAlignment="center"></Button>
+            </GridLayout>
+
+            <Label text="Next" class="sf fs20 w fw800" padding="25 20 0 15"></Label>
+            <!-- Inserire una ListView con le canzoni successive -->
+            <GridLayout rows="auto, auto" columns="*, auto" margin="15 15 0 15" paddingBottom="15">
+                <Label row="0" col="0" class="sfl fs18 w" text="Never Be The Same" paddingBottom="8"></Label>
+                <Label row="1" col="0" class="sfl fs14 fw100 w" text="Camila Cabello"></Label>
+                <Label row="0" col="1" text="g" rowSpan="2" class="icoPB"></Label>
+            </GridLayout>
+            <Label text="" class="border-b" height="1"></Label>
+            <GridLayout rows="auto, auto" columns="*, auto" margin="15 15 0 15" paddingBottom="15">
+                <Label row="0" col="0" class="sfl fs18 w" text="Real Friends" paddingBottom="8"></Label>
+                <Label row="1" col="0" class="sfl fs14 fw100 w" text="Camila Cabello"></Label>
+                <Label row="0" col="1" text="g" rowSpan="2" class="icoPB"></Label>
+            </GridLayout>
+            <Label text="" class="border-b" height="1"></Label>
+            <GridLayout row="2" rows="auto, auto" columns="*, auto" margin="15 15 0 15" paddingBottom="15">
+                <Label row="0" col="0" class="sfl fs18 w" text="Havana" paddingBottom="8"></Label>
+                <Label row="1" col="0" class="sfl fs14 fw100 w" text="Camila Cabello Ft Young Thug"></Label>
+                <Label row="0" col="1" text="g" rowSpan="2" class="icoPB"></Label>
+            </GridLayout>
+            <Label text="" class="border-b" height="1"></Label>
+            <GridLayout row="3" rows="auto, auto" columns="*, auto" margin="15 15 0 15" paddingBottom="15">
+                <Label row="0" col="0" class="sfl fs18 w" text="OMG" paddingBottom="8"></Label>
+                <Label row="1" col="0" class="sfl fs14 fw100 w" text="Camila Cabello Ft Quavo"></Label>
+                <Label row="0" col="1" text="g" rowSpan="2" class="icoPB"></Label>
+            </GridLayout>
+            <Label text="" class="border-b" height="1"></Label>
+            <GridLayout row="4" rows="auto, auto" columns="*, auto" margin="15 15 0 15" paddingBottom="15">
+                <Label row="0" col="0" class="sfl fs18 w" text="I Have Questions" paddingBottom="8"></Label>
+                <Label row="1" col="0" class="sfl fs14 fw100 w" text="Camila Cabello"></Label>
+                <Label row="0" col="1" text="g" rowSpan="2" class="icoPB"></Label>
+            </GridLayout>
+            <Label text="" class="border-b" height="1"></Label>
+            <GridLayout row="5" rows="auto, auto" columns="*, auto" margin="15 15 0 15" paddingBottom="15">
+                <Label row="0" col="0" class="sfl fs18 w" text="Crying In The Club" paddingBottom="8"></Label>
+                <Label row="1" col="0" class="sfl fs14 fw100 w" text="Camila Cabello"></Label>
+                <Label row="0" col="1" text="g" rowSpan="2" class="icoPB"></Label>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

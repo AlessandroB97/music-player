@@ -69,7 +69,7 @@ During development, I focused on:
 
 | Explore View | Now Playing | Track List |
 |--------------|-------------|-------------|
-| ![Explore](./screenshots/Screenshot_20190703_000404_org.nativescript.TryPlayer.jpg) | ![Now Playing](./screenshots/Screenshot_20190703_000437_org.nativescript.TryPlayer.jpg) | ![Track List](./screenshots/Screenshot_20190703_000506_org.nativescript.TryPlayer.jpg) |
+| ![Explore](./screenshots/Screenshot_20190703_000404_org.nativescript.MusicPlayer.jpg) | ![Now Playing](./screenshots/Screenshot_20190703_000437_org.nativescript.MusicPlayer.jpg) | ![Track List](./screenshots/Screenshot_20190703_000506_org.nativescript.MusicPlayer.jpg) |
 
 > These screenshots show the colorful Explore screen, sleek Now Playing view, and the searchable track list, all crafted with a custom gradient theme and smooth user experience in mind.
 
